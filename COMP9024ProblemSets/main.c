@@ -1,7 +1,9 @@
 #include <stdio.h>
 // #include "problem_1_1.h"
 // #include "problem_1_2.h"
-#include "problem_1_3.h"
+// #include "problem_1_3.h"
+// #include "problem_1_4.h"
+#include "problem_1_8.h"
 
 int main()
 {
@@ -15,8 +17,12 @@ int main()
 	for (int i = 0; i < 12; i++) printf("%d ", *(p + i));
 	free(p);
 #endif
-	char x[5] = { 'a','b','x','d','e' };
-	// char *p = sort_charset(x, 5);
-	// for (int i = 0; i < 5; i++) printf("%c ", p[i]);
-	// return 0;
+#ifdef PROBLEM_1_4
+	operate(5);
+	operate(6);
+#endif
+#ifdef PROBLEM_1_8
+	sort_sequence();
+#endif
+	return 0;
 }

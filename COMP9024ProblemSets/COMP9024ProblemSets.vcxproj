@@ -147,11 +147,21 @@
     <ClCompile Include="problem_1_1.c" />
     <ClCompile Include="problem_1_2.c" />
     <ClCompile Include="problem_1_3.c" />
+    <ClCompile Include="problem_1_4.c" />
+    <ClCompile Include="problem_1_5.c" />
+    <ClCompile Include="problem_1_6.c" />
+    <ClCompile Include="problem_1_7.c" />
+    <ClCompile Include="problem_1_8.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem_1_1.h" />
     <ClInclude Include="problem_1_2.h" />
     <ClInclude Include="problem_1_3.h" />
+    <ClInclude Include="problem_1_4.h" />
+    <ClInclude Include="problem_1_5.h" />
+    <ClInclude Include="problem_1_6.h" />
+    <ClInclude Include="problem_1_7.h" />
+    <ClInclude Include="problem_1_8.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
