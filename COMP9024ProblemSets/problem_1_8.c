@@ -11,14 +11,13 @@ void sort_sequence()
 		if (cnt==size-1)
 		{
 			size *= 2;
-			// realloc(p, size*sizeof(int));
-			int *new_space = malloc(size * sizeof(int));
-			int *temp_space = p;
-			p = new_space;
-			new_space = temp_space;
-			for (unsigned i = 0; i < cnt; i++) *(p + i) = *(new_space + i);
-			free(new_space);
-			//Why when I use the realloc function, it will cause the error _crtisvalidheappointer(block)?
+			p=(int*)realloc(p, size*sizeof(int));//DONOT FORGET THE sizeof(int), and need to assign the result to the pointer
+			// int *new_space = malloc(size * sizeof(int));
+			// int *temp_space = p;
+			// p = new_space;
+			// new_space = temp_space;
+			// for (unsigned i = 0; i < cnt; i++) *(p + i) = *(new_space + i);
+			// free(new_space);
 		}
 		for (unsigned i=0;i<cnt;i++)
 		{
