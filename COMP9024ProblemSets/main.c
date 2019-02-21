@@ -1,9 +1,13 @@
-#include <stdio.h>
 // #include "problem_1_1.h"
 // #include "problem_1_2.h"
 // #include "problem_1_3.h"
 // #include "problem_1_4.h"
-#include "problem_1_8.h"
+// #include "problem_1_5.h"
+// #include "problem_1_6.h"
+// #include "problem_1_7.h"
+// #include "problem_1_8.h"
+// #include "problem_2_1.h"
+#include "problem_2_2.h"
 
 int main()
 {
@@ -21,8 +25,14 @@ int main()
 	operate(5);
 	operate(6);
 #endif
+#ifdef PROBLEM_1_6
+	printf("%d, %d, %d.\n", Fib(1), Fib(5), Fib(10));
+#endif
 #ifdef PROBLEM_1_8
 	sort_sequence();
+#endif
+#ifdef PROBLEM_2_2
+	stack_testing_function();
 #endif
 	return 0;
 }

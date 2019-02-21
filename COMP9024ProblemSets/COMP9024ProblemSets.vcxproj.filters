@@ -42,6 +42,12 @@
     <ClCompile Include="problem_1_8.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="problem_2_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="problem_2_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem_1_1.h">
@@ -66,6 +72,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="problem_1_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_2_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_2_2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

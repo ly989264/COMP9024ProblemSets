@@ -1,4 +1,5 @@
 #pragma once
+#define PROBLEM_1_5
 
 typedef struct
 {

@@ -87,7 +87,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -152,6 +152,8 @@
     <ClCompile Include="problem_1_6.c" />
     <ClCompile Include="problem_1_7.c" />
     <ClCompile Include="problem_1_8.c" />
+    <ClCompile Include="problem_2_1.c" />
+    <ClCompile Include="problem_2_2.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem_1_1.h" />
@@ -162,6 +164,8 @@
     <ClInclude Include="problem_1_6.h" />
     <ClInclude Include="problem_1_7.h" />
     <ClInclude Include="problem_1_8.h" />
+    <ClInclude Include="problem_2_1.h" />
+    <ClInclude Include="problem_2_2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
