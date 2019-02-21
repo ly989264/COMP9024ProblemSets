@@ -154,6 +154,7 @@
     <ClCompile Include="problem_1_8.c" />
     <ClCompile Include="problem_2_1.c" />
     <ClCompile Include="problem_2_2.c" />
+    <ClCompile Include="problem_2_3.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem_1_1.h" />
