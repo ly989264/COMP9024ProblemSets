@@ -1,0 +1,12 @@
+Given the following definition:
+int data[12] = {5, 3, 6, 2, 7, 4, 9, 1, 8};
+and assuming that &data[0] == 0x10000, what are the values of the following expressions?
+
+0x10000 means that this is a hexadecimal number. And int is a 4-byte primitive data type.
+
+data + 4: 0x10010 (0x10000+4*4) //note that this is the hexadecimal number, so the result should be 0x10010 rather than 0x10016!!!
+*data + 4: 9
+*(data + 4): 7
+data[4]: 7
+*(data + *(data + 3)): 6
+data[data[2]]: 9

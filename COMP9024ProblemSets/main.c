@@ -7,7 +7,9 @@
 // #include "problem_1_7.h"
 // #include "problem_1_8.h"
 // #include "problem_2_1.h"
-#include "problem_2_2.h"
+// #include "problem_2_2.h"
+// #include "problem_2_4.h"
+// #include "problem_2_7.h"
 
 int main()
 {
@@ -34,5 +36,14 @@ int main()
 #ifdef PROBLEM_2_2
 	stack_testing_function();
 #endif
+#ifdef PROBLEM_2_4
+	convert_base2(13);
+	convert_base2(128);
+	convert_base2(127);
+#endif
+#ifdef PROBLEM_2_7
+	testing();
+#endif
 	return 0;
 }
+

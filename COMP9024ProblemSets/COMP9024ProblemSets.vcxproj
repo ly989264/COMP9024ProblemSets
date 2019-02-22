@@ -155,6 +155,11 @@
     <ClCompile Include="problem_2_1.c" />
     <ClCompile Include="problem_2_2.c" />
     <ClCompile Include="problem_2_3.c" />
+    <ClCompile Include="problem_2_4.c" />
+    <ClCompile Include="problem_2_5.c" />
+    <ClCompile Include="problem_2_6.c" />
+    <ClCompile Include="problem_2_7.c" />
+    <ClCompile Include="problem_2_8.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem_1_1.h" />
@@ -167,6 +172,14 @@
     <ClInclude Include="problem_1_8.h" />
     <ClInclude Include="problem_2_1.h" />
     <ClInclude Include="problem_2_2.h" />
+    <ClInclude Include="problem_2_4.h" />
+    <ClInclude Include="problem_2_5.h" />
+    <ClInclude Include="problem_2_7.h" />
+    <ClInclude Include="problem_2_8.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="problem_2_6.txt" />
+    <Text Include="problem_2_7.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
