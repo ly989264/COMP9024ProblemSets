@@ -66,6 +66,21 @@
     <ClCompile Include="problem_2_8.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="problem_3_1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="problem_3_2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="problem_3_3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="problem_3_4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="single_linked_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem_1_1.h">
@@ -108,6 +123,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="problem_2_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_3_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_3_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_3_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_3_4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="single_linked_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,3 +1,4 @@
+#include <stdio.h>
 // #include "problem_1_1.h"
 // #include "problem_1_2.h"
 // #include "problem_1_3.h"
@@ -10,6 +11,11 @@
 // #include "problem_2_2.h"
 // #include "problem_2_4.h"
 // #include "problem_2_7.h"
+// #include "problem_3_1.h"
+// #include "problem_3_2.h"
+// #include "problem_3_3.h"
+#include "single_linked_list.h"
+
 
 int main()
 {
@@ -30,6 +36,9 @@ int main()
 #ifdef PROBLEM_1_6
 	printf("%d, %d, %d.\n", Fib(1), Fib(5), Fib(10));
 #endif
+#ifdef PROBLEM_1_7
+	printf("%d\n", find_largest(3, 1, 5));
+#endif
 #ifdef PROBLEM_1_8
 	sort_sequence();
 #endif
@@ -44,6 +53,32 @@ int main()
 #ifdef PROBLEM_2_7
 	testing();
 #endif
+#ifdef PROBLEM_3_1
+	int *arr = makeArrayOfInts();
+	for (int i=0;i<10;i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+	free(arr);
+#endif
+#ifdef PROBLEM_3_2
+	testing_func();
+#endif
+#ifdef PROBLEM_3_3
+	printf("%lld\n", cal_3(60));
+#endif
+	struct linked_list* x = create_linked_list();
+	printf("The length of the linked list is: %d\n", get_len(x));
+	add_element_to_linked_list(x, 5);
+	add_element_to_linked_list(x, 6);
+	add_element_to_linked_list(x, 7);
+	printf("The length of the linked list is: %d\n", get_len(x));
+	print_linked_list(x);
+	delete_last_element(x);
+	printf("The length of the linked list is: %d\n", get_len(x));
+	print_linked_list(x);
+	free_linked_list(x);
 	return 0;
 }
 
