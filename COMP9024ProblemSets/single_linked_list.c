@@ -56,7 +56,7 @@ void print_linked_list(const struct linked_list* current_listed_list)
 	return;
 }
 
-void delete_last_element(struct linked_list* current_linked_list)
+int delete_last_element(struct linked_list* current_linked_list)
 {
 	if (get_len(current_linked_list)==0)
 	{
@@ -65,10 +65,11 @@ void delete_last_element(struct linked_list* current_linked_list)
 	}
 	if (get_len(current_linked_list)==1)
 	{
+		int temp = current_linked_list->first_node->value;
 		free(current_linked_list->first_node);
 		current_linked_list->first_node = NULL;
 		current_linked_list->size--;
-		return;
+		return temp;
 	}
 	struct node* current = current_linked_list->first_node;
 	while(current->next->next)
@@ -77,9 +78,10 @@ void delete_last_element(struct linked_list* current_linked_list)
 	}
 	struct node* temp = current->next;
 	current->next = NULL;
+	int temp_result = temp->value;
 	free(temp);
 	current_linked_list->size--;
-	return;
+	return temp_result;
 }
 
 void delete_first_element(struct linked_list* current_linked_list)
@@ -93,10 +95,15 @@ void delete_first_element(struct linked_list* current_linked_list)
 	{
 		free(current_linked_list->first_node);
 		current_linked_list->first_node = NULL;
+		current_linked_list->size--;
 		return;
 	}
 	struct node* current = current_linked_list->first_node;
-
+	struct node* next_node = current->next;
+	free(current);
+	current_linked_list->first_node = next_node;
+	current_linked_list->size--;
+	return;
 }
 
 

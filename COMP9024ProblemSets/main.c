@@ -14,7 +14,13 @@
 // #include "problem_3_1.h"
 // #include "problem_3_2.h"
 // #include "problem_3_3.h"
-#include "single_linked_list.h"
+//#include "single_linked_list.h"
+//#include "problem_3_4.h"
+//#include "stack_adt.h"
+//#include "problem_3_5.h"
+//#include "queue_adt.h"
+//#include "problem_3_6.h"
+#include "problem_3_7.h"
 
 
 int main()
@@ -68,17 +74,28 @@ int main()
 #ifdef PROBLEM_3_3
 	printf("%lld\n", cal_3(60));
 #endif
-	struct linked_list* x = create_linked_list();
-	printf("The length of the linked list is: %d\n", get_len(x));
-	add_element_to_linked_list(x, 5);
-	add_element_to_linked_list(x, 6);
-	add_element_to_linked_list(x, 7);
-	printf("The length of the linked list is: %d\n", get_len(x));
-	print_linked_list(x);
-	delete_last_element(x);
-	printf("The length of the linked list is: %d\n", get_len(x));
-	print_linked_list(x);
-	free_linked_list(x);
+#ifdef PROBLEM_3_4
+	struct queue* x = create_queue();
+	printf("The length of the queue is %\d.\n", get_length_queue(x));
+	push_queue(x, 1);
+	push_queue(x, 2);
+	push_queue(x, 5);
+	printf("The length of the queue is %d.\n", get_length_queue(x));
+	print_queue(x);
+	printf("Pop from the queue: %d.\n", pop_queue(x));
+	printf("The length of the queue is %d.\n", get_length_queue(x));
+	print_queue(x);
+	free_queue(x);
+#endif
+#ifdef PROBLEM_3_5
+	holder();
+#endif
+#ifdef PROBLEM_3_6
+	operate_3_6();
+#endif
+#ifdef PROBLEM_3_7
+	operate_3_7();
+#endif
 	return 0;
 }
 
